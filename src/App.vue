@@ -32,6 +32,8 @@ export default {
     margin: 0;
     padding: 0;
     width: 100%;
+    background-color: #000;
+    color: #fff;
   }
   h1 {
     font-size: 6.250rem;
