@@ -80,6 +80,8 @@ export default {
     right: 0;
     transform: translateX(100%);
     animation-duration: 4s;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
   .slider a {
     color: #fff;
@@ -153,6 +155,11 @@ export default {
     animation-duration: 8s;
     animation-name: wobble-1;
   }
+  @media (max-width: 767px) {
+.slider-5 {
+  margin-top: -50px;
+}
+}
   @keyframes wobble-1 {
     0% {
       transform: translateX(100);
@@ -195,10 +202,22 @@ export default {
   position: absolute;
   top: calc(50% - 18px);
   left: calc(50% - 115px);
-  animation-duration: 7s, 2s;
-  animation-delay: 0.1s, 17.5s;
-  animation-name: dots-move-top, dots-move-left;
+  animation-duration: 7s;
+  animation-delay: 0.1s;
+  animation-name: dots-move-top;
   animation-fill-mode: forwards;
+}
+@media (min-width: 768px) {
+  .dots {
+    filter: url("#goo");
+    position: absolute;
+    top: calc(50% - 18px);
+    left: calc(50% - 115px);
+    animation-duration: 7s, 2s;
+    animation-delay: 0.1s, 17.5s;
+    animation-name: dots-move-top, dots-move-left;
+    animation-fill-mode: forwards;
+  }
 }
 @keyframes dots-move-top {
   0%,65% {top:calc(50% - 18px);}
@@ -206,7 +225,7 @@ export default {
 }
 @keyframes dots-move-left {
   0%,65% {left: calc(50% - 115px);}
-  100% {left:35px;}
+  100% {left:20px;}
 }
 .dots__item {
   width: 36px;
@@ -243,16 +262,23 @@ export default {
 
 
 h1 {
-  display: flex;
+  @media (min-width: 768px) {
+    display: flex;
+  }
 }
 
 
 .word-wrap {
   list-style: none;
-  margin: 0 0 0 15px;
+  margin: 0;
   padding: 0;
-  display: inline-block;
-  min-width: 300px;
+}
+@media (min-width: 768px) {
+  .word-wrap {
+    margin: 0 0 0 15px;
+    display: inline-block;
+    min-width: 300px;
+  }
 }
 .word {
   position: absolute;
@@ -261,6 +287,12 @@ h1 {
   animation-name: anim;
   animation-duration: 7.5s;
   text-decoration: underline;
+}
+@media (max-width: 767px) {
+  .word {
+    left: 20px;
+    right: 20px;
+  }
 }
 .word:nth-child(2) {
   animation-delay: 1.5s;

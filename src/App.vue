@@ -27,7 +27,7 @@ export default {
   }
   @media (max-width: 767px) {
     html {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
   body {
@@ -46,7 +46,7 @@ export default {
     color: #fff;
   }
   h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     margin: 0;
   }
   a {
