@@ -156,10 +156,10 @@ export default {
     animation-name: wobble-1;
   }
   @media (max-width: 767px) {
-.slider-5 {
-  margin-top: -50px;
-}
-}
+    .slider-5 {
+      margin-top: -50px;
+    }
+  }
   @keyframes wobble-1 {
     0% {
       transform: translateX(100);
@@ -261,8 +261,9 @@ export default {
 
 
 
-h1 {
-  @media (min-width: 768px) {
+
+@media (min-width: 768px) {
+  h1 {
     display: flex;
   }
 }

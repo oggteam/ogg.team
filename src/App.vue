@@ -13,11 +13,11 @@ export default {
 <style>
   @font-face {
       font-family: 'poppinssemibold';
-      src: url('./assets/fonts/poppins-semibold-webfont.eot');
-      src: url('./assets/fonts/poppins-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-            url('./assets/fonts/poppins-semibold-webfont.woff2') format('woff2'),
-            url('./assets/fonts/poppins-semibold-webfont.woff') format('woff'),
-            url('./assets/fonts/poppins-semibold-webfont.svg#poppinssemibold') format('svg');
+      src: url('../static/fonts/poppins-semibold-webfont.eot');
+      src: url('../static/fonts/poppins-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+            url('../static/fonts/poppins-semibold-webfont.woff2') format('woff2'),
+            url('../static/fonts/poppins-semibold-webfont.woff') format('woff'),
+            url('../static/fonts/poppins-semibold-webfont.svg#poppinssemibold') format('svg');
       font-weight: normal;
       font-style: normal;
   }
