@@ -42,6 +42,16 @@
       <p>
         <a class="btn btn_violet" href="mailto:ogg.design.team@gmail.com">Start a project</a>
       </p>
+      <div class="collapse navbar-collapse">
+        <ul class="nav">
+          <li class="nav_item">
+            <router-link class="nav_item_link" to="/about">About</router-link>
+          </li>
+          <li class="nav_item">
+            <router-link class="nav_item_link" to="/portfolio">Portfolio</router-link>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -61,6 +71,29 @@ export default {
 .wrapper {
   height: 100%;
   width: 100%;
+}
+
+// *****
+// Nav
+// *****
+.nav {
+  bottom: 20px;
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-around;
+  left: 0;
+  list-style: none;
+  margin: 3rem 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+}
+.nav_item_link {
+  margin: 0 3rem;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 // *****

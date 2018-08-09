@@ -50,7 +50,7 @@ export default {
     margin: 0 0 3rem;
   }
   a {
-    color: #000;
+    color: #fff;
     text-decoration: underline;
   }
   #app {
