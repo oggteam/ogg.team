@@ -10,7 +10,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
   @font-face {
       font-family: 'poppinssemibold';
       src: url('../static/fonts/poppins-semibold-webfont.eot');
@@ -31,23 +31,23 @@ export default {
     }
   }
   body {
-    font-family: 'poppinssemibold', sans-serif;
     align-content: center;
     align-items: center;
+    background-color: #000;
     box-sizing: border-box;
+    color: #fff;
     display: flex;
     flex-direction: column;
+    font-family: 'poppinssemibold', sans-serif;
     height: 100%;
     justify-content: center;
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: #000;
-    color: #fff;
   }
   h1 {
     font-size: 4rem;
-    margin: 0;
+    margin: 0 0 3rem;
   }
   a {
     color: #000;
@@ -57,4 +57,36 @@ export default {
     height: 100%;
     width: 100%;
   }
+.btn {
+  border-radius: 6px;
+  min-width: 200px;
+  padding: 20px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.btn_violet {
+  background-image: linear-gradient( to bottom right,rgba(63,81,181,1) 0%, rgba(171,71,188 ,1) 70%);
+  box-shadow: 1px 1px 30px rgb(93, 41, 214);
+  position: relative;
+  z-index: 1;
+  &:before {
+    background-image: linear-gradient( to bottom right, rgba(171,71,188 ,1) 0%, rgba(63,81,181,1) 70%);
+    border-radius: inherit;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.45s;
+    width: 100%;
+    z-index: -1;
+  }
+  &:hover {
+    &:before {
+      opacity: 1;
+    }
+  }
+}
 </style>
