@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
+    <button class="btn btn_skip" type="button">Skip</button>
     <div class="slide slide_1">
       <div class="dots">
         <div class="dots__item dots__item_first"></div>
@@ -17,10 +18,10 @@
       </svg>
     </div>
     <div class="slide slide_2">
-      <h1>Yes, just f&#9880;cking three dots!</h1>
+      <h1>Just 3 dots...</h1>
     </div>
     <div class="slide slide_3">
-      <h1>Because that's simple &#38; effective</h1>
+      <h1>...instead of many words</h1>
     </div>
     <div class="slide slide_4">
       <h1>Who we are?</h1>
@@ -29,18 +30,18 @@
       <h1>
         We are
         <ul class="word-wrap">
-          <li class="word">design</li>
-          <li class="word">web</li>
-          <li class="word">identity</li>
-          <li class="word">graphics</li>
-          <li class="word">front-end</li>
+          <li class="word n333" >your new brand</li>
+          <li class="word n444" >your new site</li>
+          <li class="word n555" >OGG Team</li>
+          <li class="word n111">...</li>
+          <li class="word n222" >badass creators</li>
         </ul>
-        </h1>
+      </h1>
     </div>
     <div class="slide slide_6">
       <h1>Are you ready?</h1>
       <p>
-        <a class="btn btn_violet" href="mailto:ogg.design.team@gmail.com">Start a project</a>
+        <a class="btn btn_violet" href="mailto:ogg.design.team@gmail.com">Work together</a>
       </p>
       <div class="collapse navbar-collapse">
         <ul class="nav">
@@ -79,7 +80,7 @@ export default {
 .nav {
   bottom: 20px;
   display: flex;
-  font-size: 2rem;
+  font-size: 1.7rem;
   justify-content: space-around;
   left: 0;
   list-style: none;
@@ -227,7 +228,7 @@ export default {
 // *****
 .dots {
   animation-delay: 0.1s;
-  animation-duration: 7s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-name: dots-move-top;
   filter: url("#goo");
@@ -235,8 +236,8 @@ export default {
   position: absolute;
   top: calc(50% - 18px);
   @media (min-width: 768px) {
-    animation-delay: 0.1s, 17.5s;
-    animation-duration: 7s, 2s;
+    animation-delay: 0.1s, 4.5s;
+    animation-duration: 3s, 1s;
     animation-name: dots-move-top, dots-move-left;
   }
 }
@@ -330,7 +331,6 @@ export default {
   animation-name: anim;
   opacity: 0;
   position: absolute;
-  text-decoration: underline;
 }
 @media (max-width: 767px) {
   .word {

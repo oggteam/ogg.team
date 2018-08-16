@@ -58,16 +58,39 @@ export default {
     width: 100%;
   }
 .btn {
+  background-color: transparent;
   border-radius: 6px;
-  min-width: 200px;
   padding: 20px 40px;
   text-decoration: none;
-  text-transform: uppercase;
+}
+.btn_skip {
+  border: 1px solid #fff3;
+  color: #fff3;
+  outline: none;
+  padding: 6px 20px;
+  position: absolute;
+  right: 20px;
+  top: 37px;
+  transition: 0.15s;
+  z-index: 1;
+  &:hover {
+    background-color: #fff;
+    border-color: #fff;
+    cursor: pointer;
+    color: #000;
+  }
+  &:active {
+    background-image: linear-gradient( to bottom right,rgba(63,81,181,1) 0%, rgba(171,71,188 ,1) 70%);
+    border-color: rgb(93, 41, 214);
+    color: #fff;
+  }
 }
 .btn_violet {
   background-image: linear-gradient( to bottom right,rgba(63,81,181,1) 0%, rgba(171,71,188 ,1) 70%);
   box-shadow: 1px 1px 30px rgb(93, 41, 214);
+  min-width: 200px;
   position: relative;
+  text-transform: uppercase;
   z-index: 1;
   &:before {
     background-image: linear-gradient( to bottom right, rgba(171,71,188 ,1) 0%, rgba(63,81,181,1) 70%);
