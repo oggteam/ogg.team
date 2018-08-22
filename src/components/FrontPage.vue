@@ -17,7 +17,7 @@
       </svg>
     </div>
     <div v-bind:class="{ hide: isHide}">
-      <button class="btn btn_skip" type="button">Skip</button>
+      <button class="btn btn_skip" type="button" v-on:click="hideSlide">Skip</button>
       <div class="slide slide_2">
         <h1>Just 3 dots...</h1>
       </div>
@@ -63,6 +63,11 @@ export default {
   data () {
     return {
       isHide: false
+    }
+  },
+  methods: {
+    hideSlide () {
+      this.isHide = true
     }
   },
   created () {
