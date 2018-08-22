@@ -46,8 +46,8 @@ export default {
     width: 100%;
   }
   h1 {
-    font-size: 4rem;
-    margin: 0 0 3rem;
+    font-size: 5rem;
+    margin: 0 0 4rem;
   }
   a {
     color: #fff;
@@ -88,7 +88,7 @@ export default {
 .btn_violet {
   background-image: linear-gradient( to bottom right,rgba(63,81,181,1) 0%, rgba(171,71,188 ,1) 70%);
   box-shadow: 1px 1px 30px rgb(93, 41, 214);
-  min-width: 200px;
+  display: inline-block;
   position: relative;
   text-transform: uppercase;
   z-index: 1;
