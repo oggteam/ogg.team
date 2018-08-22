@@ -49,7 +49,7 @@
             <router-link class="nav_item_link" to="/about">About</router-link>
           </li>
           <li class="nav_item">
-            <router-link class="nav_item_link" to="/portfolio">Portfolio</router-link>
+            <a class="nav_item_link" target="_blank" href="https://www.behance.net/oggteam">Portfolio</a>
           </li>
         </ul>
       </div>
