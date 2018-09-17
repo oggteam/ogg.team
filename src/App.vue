@@ -48,6 +48,9 @@ export default {
   h1 {
     font-size: 5rem;
     margin: 0 0 4rem;
+    @media (max-width: 767px) {
+      font-size: 3rem;
+    }
   }
   a {
     color: #fff;
